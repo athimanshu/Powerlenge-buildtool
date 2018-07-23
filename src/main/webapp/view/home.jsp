@@ -15,7 +15,7 @@ function getJar()
 		var groupId = $('#groupId').val();
 		var version =  $('#version').val();
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "/getJar", 
                 data: {
                 	"aId": artifactId,
@@ -23,6 +23,7 @@ function getJar()
                 	"vId": version},
                 success: function(msg){      
                         //todo
+                        alert("msg"+msg);
                 }
             });
         }
