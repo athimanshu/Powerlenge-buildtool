@@ -35,7 +35,7 @@ public class HomeController {
 		String aId = request.getParameter("aId");
 		String gId = request.getParameter("gId");
 		String vId = request.getParameter("vId");
-		logger.info("All input value : "+ aId +", "+ gId+", "+vId);
+		logger.info("input values : "+ aId +", "+ gId+", "+vId);
 		downloadFile(response);
 		response.setContentType("application/pdf");
 	    response.setHeader("Content-Disposition", "attachment; filename=\"demo.pdf\"");
